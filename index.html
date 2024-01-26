@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>RGB Game</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="rgbcode">RGB Guessing Game<span id="color-display">Clique em "New Colors"</span></h1>
+    </div>
+    <div id="bar">
+      <ul id="options">
+        <li id="newColor" onclick="newColor()">New Colors</li>
+        <li id="scoreLabel">Pontuação: <span id="score">0</span></li>
+        <li id="settings" onclick="settings()">Configurações</li>
+
+      </ul>
+    </div>
+    <div id="main">
+      <section id="grid">
+        <input type="button" class="btn" onclick="clickButton(0)"/>
+        <input type="button" class="btn" onclick="clickButton(1)" />
+        <input type="button" class="btn" onclick="clickButton(2)" />
+        <input type="button" class="btn" onclick="clickButton(3)" />
+        <input type="button" class="btn" onclick="clickButton(4)" />
+        <input type="button" class="btn" onclick="clickButton(5)" />
+      </section>
+    </div>
+  </body>
+</html>
